@@ -16,7 +16,7 @@
 
 LOCAL_PATH := $(call my-dir)
 
-ifneq ($(filter gts4lvwifi,$(TARGET_DEVICE)),)
+ifneq ($(filter gts4lvwifi gts4lvlte,$(TARGET_DEVICE)),)
 
 include $(CLEAR_VARS)
 LOCAL_MODULE := libantradio
